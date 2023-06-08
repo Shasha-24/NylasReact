@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,8 +29,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -66,4 +68,45 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.header {
+  background-color: #ffd972;
+  padding: 15px;
+  height: 90px;
+}
+
+.name {
+  font-size: 24px;
+  color: #b0abab;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #777;
+}
+
+.Tableau {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Tableau th,
+.Tableau td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.Tableau th {
+  background-color: #f2f2f2;
+}
+
+.Tableau tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.Tableau tr:hover {
+  background-color: #e6e6e6;
 }

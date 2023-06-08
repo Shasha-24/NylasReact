@@ -1,0 +1,30 @@
+.tableau {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid rgb(44, 42, 44);
+}
+
+th, td {
+  padding: 20px;.Tableau {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Tableau th, .Tableau td {
+  border: 1px solid black;
+  padding: 8px; 
+}
+
+.Tableau th {
+  background-color: #0d0404;
+}
+
+.Tableau tr:nth-child(even) {
+  background-color: #1f0909;
+}
+
+.Tableau tr:hover {
+  background-color: #7e1f1f;
+}
+}
