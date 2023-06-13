@@ -1,0 +1,78 @@
+.form-structor {
+  position: relative;
+  height: 450px;
+  width: 500px;
+  background-color: #eee;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 34%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.box3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.sinscrire-bouton {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.box4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.box5 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.connecter-bouton {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.finbar-page1 {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  flex-shrink: 3;
+  flex-grow: 1;
+}
+
+.submit-btn {
+  background-color: #b0947c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #957a62;
+}

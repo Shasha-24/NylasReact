@@ -1,5 +1,5 @@
 /* Styles pour le conteneur principal */
-.flex {
+/*.flex {
   display: flex;
 }
 
@@ -22,7 +22,7 @@
 }
 
 /* Styles pour les titres */
-.text-3xl {
+/*.text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
@@ -37,10 +37,10 @@
 
 .mb-3 {
   margin-bottom: 0.75rem;
-}
+}*/
 
 /* Styles pour les paragraphes */
-.mb-3:not(:last-child) {
+/*.mb-3:not(:last-child) {
   margin-bottom: 0.75rem;
 }
 
@@ -65,7 +65,7 @@ textarea:focus {
 }
 
 /* Styles pour le bouton */
-.h-10 {
+/*.h-10 {
   height: 2.5rem;
 }
 
@@ -88,4 +88,4 @@ textarea:focus {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
+}*/

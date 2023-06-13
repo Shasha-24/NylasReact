@@ -1,4 +1,4 @@
-import { useState, FormEvent } from "react";
+/*import { useState, FormEvent } from "react";
 import styles from "./ContactPage.module.css";
 
 
@@ -85,6 +85,6 @@ export function ContactPage() {
       </form>
     </div>
   );
-}
+}*/
 
 

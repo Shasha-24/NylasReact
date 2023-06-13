@@ -1,0 +1,14 @@
+footer {
+  background-color: #f0f8f7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.Services {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  transition: 0, 3 all;
+  margin-bottom: 6%;
+}

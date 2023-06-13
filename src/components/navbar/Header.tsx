@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css"
 
 type Props = {
   name: string;
@@ -6,8 +7,32 @@ type Props = {
 
 const Header: React.FC<Props> = ({ name }) => {
   return (
-    <header className="header">
-      <h1 className="title">{name}</h1>
+    <header>
+      <div className="principale">
+        <div id="logo">
+          <a id="logo" href="/">
+            {" "}
+            <span id="logo">N</span>ylas
+          </a>
+        </div>
+        <ul className="navbar">
+          <li>
+            <a href="/">Accueil</a>
+          </li>
+          <li>
+            <a href="/nosproduits">Nos produits</a>
+          </li>
+          <li>
+            <a href="/panier">Panier</a>
+          </li>
+          <li>
+            <a href="/formulaire">Se connecter/s'inscrire</a>
+          </li>
+          <li>
+            <a href="/nouscontacter">Nous contacter</a>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };
