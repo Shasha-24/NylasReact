@@ -1,13 +1,34 @@
 import "./App.css";
 import Header from "../src/components/navbar/Header";
 import "./index.css";
-import NewProductsPage from "./pages/NewProductsPage";
-/*import { ContactPage } from "./ContactPage";*/
 import Footer from "./components/footer/footer";
 import Formulaire from "./components/formulaire/formulaire";
-//import Panier from "./components/panier/panier";
+import NewProductsPage from "./pages/NewProductsPage";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Panier from "./components/panier/panier";
 
-function App() {
+
+
+    function App() {
+      return (
+        <Router>
+          <div>
+            <Route path="/" Component={Header} />
+            <Route path="/" Component={Footer} />
+            <Route path="/" Component={NewProductsPage} />
+            <Route path="/" Component={Formulaire} />
+            <Route path="/" Component={Panier} />
+            <Route path="/" Component={Footer} />
+          </div>
+        </Router>
+      );
+    }
+
+
+
+
+
+/*function App() {
   return (
     <div>
       <Header name=" nous contacter" />
@@ -17,6 +38,7 @@ function App() {
       <main>{}</main>
     </div>
   );
-}
+}*/
 
 export default App;
+

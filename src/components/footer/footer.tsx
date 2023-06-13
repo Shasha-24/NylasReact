@@ -1,18 +1,19 @@
 import React from "react";
-import "./footer.css"
+import "./footer.css";
+import { Link } from "react-router-dom";
 
 type Props = {
   name: string;
 };
 
-export function Footer()  {
+export function Footer() {
   return (
     <footer>
       <div className="login-banner">
         <div className="fin">
           <ul className="finbar">
             <li>
-              <a href="/nouscontacter">Nous contacter</a>
+              <Link to="/nous-contacter">Nous contacter</Link>{" "}
             </li>
             <li>
               <a href="#">Notre Newsletters</a>
@@ -25,6 +26,6 @@ export function Footer()  {
       </div>
     </footer>
   );
-};
+}
 
-export default Footer ;
+export default Footer;

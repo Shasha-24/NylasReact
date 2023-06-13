@@ -1,4 +1,4 @@
-export default function Root() {
+/*export default function Root() {
   return (
     <>
       <div id="sidebar">
@@ -33,4 +33,4 @@ export default function Root() {
       <div id="detail"></div>
     </>
   );
-}
+}*/

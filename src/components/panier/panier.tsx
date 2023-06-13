@@ -1,63 +1,66 @@
 import "./panier.css"
-/*import React from "react";
+import React, { useState } from "react";
 
 
-type Props = {
+
+interface Product {
+  id: number;
   name: string;
-};
+  price: number;
+}
 
-export function Panier()  {
+const Panier: React.FC = () => {
+  const [cartItems, setCartItems] = useState<Product[]>([]);
+
+  const addToCart = (product: Product) => {
+    setCartItems((prevItems) => [...prevItems, product]);
+  };
+
+  const removeFromCart = (productId: number) => {
+    setCartItems((prevItems) =>
+      prevItems.filter((item) => item.id !== productId)
+    );
+  };
+
+  const calculateTotalPrice = (): number => {
+    return cartItems.reduce((total, item) => total + item.price, 0);
+  };
+
   return (
-
-<div className="login-banner">
-            <h1 className="page title">
-                Mon Panier
-            </h1>
-        </div>
-        </Head>
-
-        <body>
-            <div className="panier">
-                <h2>Votre panier :</h2>
-                </div>
-                <ul>
-                    <li>Produit 1 - Prix : 352,58€</li>
-                    <li>Produit 2 - Prix : 90€</li>
-                    <li>Produit 3 - Prix : 500€</li>
-                </ul>
-                <div className="total">
-                    Total : 942,58€
-                </div>
-                <button>Passer commande</button>
-            </body>
- );
+    <div>
+      <h1>Mon Panier</h1>
+      <div>
+        <h2>Votre panier :</h2>
+        {cartItems.length === 0 ? (
+          <p>Votre panier est vide.</p>
+        ) : (
+          <ul>
+            {cartItems.map((item) => (
+              <li key={item.id}>
+                {item.name} - Prix : {item.price}€{" "}
+                <button onClick={() => removeFromCart(item.id)}>
+                  Supprimer
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      <div>Total : {calculateTotalPrice()}€</div>
+      <div>
+        <button
+          onClick={() => addToCart({ id: 1, name: "Produit 1", price: 10 })}
+        >
+          Ajouter Produit 1
+        </button>
+        <button
+          onClick={() => addToCart({ id: 2, name: "Produit 2", price: 20 })}
+        >
+          Ajouter Produit 2
+        </button>
+      </div>
+    </div>
+  );
 };
 
-export default Panier ;*/
-
-
-
-
-/*<div className="login-banner">
-            <h1 className="page title">
-                Mon Panier
-            </h1>
-        </div>
-        </Header>
-
-        <body>
-            <div class="panier">
-                <h2>Votre panier :</h2>
-                </br>
-                <ul>
-                    <% produits.forEach((produit)=> { %>
-                        <li>
-                            <%= produit.NAME%> - Prix : <%= produit.price%>€
-                        </li>
-                        <% }) %>
-                </ul>
-                <div class="total">
-                    Total : <%= price%>€
-                </div>
-                <button>Passer commande</button>
-            </div>*/
+export default Panier;

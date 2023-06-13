@@ -1,11 +1,13 @@
 import React from "react";
 import "./Header.css"
+import { Link } from "react-router-dom";
+
 
 type Props = {
   name: string;
 };
 
-const Header: React.FC<Props> = ({ name }) => {
+export function Header()  {
   return (
     <header>
       <div className="principale">
